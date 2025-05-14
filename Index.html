@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FORZIX™ | #1 Male Enhancement in USA</title>
+  <meta name="description" content="Doctor-approved formula helps 83% of men last longer in just 7 days. Try risk-free with our 180-day guarantee."/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto :wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .header-badge {
+      background: #e74c3c;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+    .subhead {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    .cta-button {
+      display: block;
+      background: #f1c40f;
+      color: #333;
+      text-align: center;
+      padding: 15px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      margin: 20px 0;
+      box-shadow: 0 5px 0 rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #e67e22;
+    }
+    .product-image {
+      position: relative;
+      margin: 20px 0;
+    }
+    .product-image img {
+      width: 100%;
+      border: 3px solid #f1c40f;
+      border-radius: 10px;
+    }
+    .stock-alert {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin: 20px 0;
+    }
+    #live-activity {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      max-width: 300px;
+    }
+    .notif {
+      background: #f1c40f;
+      color: #333;
+      padding: 12px 16px;
+      border-radius: 30px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      animation: fadeInUp 0.6s ease-out;
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .comment-section {
+      margin-top: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .comment {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-left: 4px solid #e74c3c;
+      border-radius: 4px;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 24px; }
+      .subhead { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- LIVE USER ACTIVITY ALERT -->
+  <div id="live-activity"></div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-badge">🔥 BEST SELLING MALE ENHANCEMENT</div>
+    <h1>Struggling To Last In Bed? FORZIX™ Gives You 57+ Minutes Naturally</h1>
+    <p class="subhead">83% of American men see results in 7 days – Doctor Approved!</p>
+    <div style="background:#000;padding:10px;margin-top:15px;border-radius:5px;">
+      <p style="margin:0;color:#f1c40f;font-weight:bold;">🚀 LIMITED TIME: <span style="text-decoration:line-through">$179</span> $89 + FREE Shipping</p>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- PRODUCT IMAGE -->
+    <div class="product-image">
+      <img src="https://i.postimg.cc/2Sn7xdXR/file-0000000044a8622f9fd3a1d48cd61d54.png " alt="FORZIX Bottle" />
+    </div>
+
+    <!-- CTA BUTTON -->
+    <a href="https://forzixnutra.com/dtc-edcaps/?aff=Nitesh9 " class="cta-button">👉 GET YOUR DISCOUNTED BOTTLE NOW</a>
+
+    <!-- STOCK INFO -->
+    <div class="stock-alert">
+      <p><strong><span id="live-viewers">23</span> people are viewing this page now</strong></p>
+      <p style="margin:10px 0 0;"><strong>Only <span id="remaining-stock">42</span> bottles left!</strong></p>
+    </div>
+
+    <!-- COMMENTS SECTION -->
+    <div class="comment-section">
+      <h3>Live Customer Feedback:</h3>
+      <div id="comments"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer style="text-align:center; font-size:12px; color:#777; margin-top:30px;">
+      <p>*These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+      <p>© 2024 FORZIX™. All Rights Reserved.</p>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Fake Users and Cities
+    const names = ["Mike", "David", "Chris", "John", "Robert", "James"];
+    const cities = ["New York", "Chicago", "Houston", "Phoenix", "Philadelphia", "San Antonio"];
+
+    // Show live activity alert
+    function showActivityAlert() {
+      const name = names[Math.floor(Math.random() * names.length)];
+      const city = cities[Math.floor(Math.random() * cities.length)];
+
+      const alertBox = document.createElement('div');
+      alertBox.className = 'notif';
+      alertBox.innerHTML = `🚀 <strong>${name}</strong> from <strong>${city}</strong> just ordered FORZIX!`;
+
+      const container = document.getElementById('live-activity');
+      container.appendChild(alertBox);
+
+      setTimeout(() => {
+        alertBox.style.opacity = '0';
+        setTimeout(() => alertBox.remove(), 600);
+      }, 5000);
+    }
+
+    // Add live comment
+    function addComment() {
+      const name = names[Math.floor(Math.random() * names.length)];
+      const city = cities[Math.floor(Math.random() * cities.length)];
+      const comments = [
+        "After 2 weeks I lasted so much longer!",
+        "This changed my life completely.",
+        "My wife said I feel like I'm 25 again!",
+        "No side effects at all. Highly recommend.",
+        "Fast shipping and great quality."
+      ];
+      const commentText = comments[Math.floor(Math.random() * comments.length)];
+
+      const commentDiv = document.createElement('div');
+      commentDiv.className = 'comment';
+      commentDiv.innerHTML = `<strong>${name}, ${city}</strong><br><small>"${commentText}"</small>`;
+      const commentsContainer = document.getElementById('comments');
+
+      if (commentsContainer.children.length > 5) {
+        commentsContainer.removeChild(commentsContainer.lastChild);
+      }
+
+      commentsContainer.prepend(commentDiv);
+    }
+
+    // Start Live Updates
+    setInterval(showActivityAlert, 8000); // Every 8 seconds
+    setInterval(addComment, 10000); // Every 10 seconds
+
+    // Dynamic Viewer Counter
+    let viewers = 23;
+    setInterval(() => {
+      viewers += Math.floor(Math.random() * 2);
+      document.getElementById("live-viewers").textContent = viewers;
+    }, 30000);
+
+    // Stock Counter
+    let stock = 42;
+    setInterval(() => {
+      stock -= Math.floor(Math.random() * 2);
+      if (stock < 5) stock = 5;
+      document.getElementById("remaining-stock").textContent = stock;
+    }, 30000);
+  </script>
+
+</body>
+</html>
